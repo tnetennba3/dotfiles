@@ -1,0 +1,29 @@
+[user]
+	name = Helena Thompson
+	email = helenathompson.dev@gmail.com
+
+[init]
+	defaultBranch = main
+
+[core]
+	editor = code --wait
+
+[pull]
+	rebase = true
+
+[push]
+	autoSetupRemote = true
+
+[alias]
+	co = checkout
+	br = branch
+	st = status
+	ci = commit
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	lg = log --oneline --graph --decorate
+	cleanup = !git branch --format='%(refname:short)' | grep -v '^main$' | xargs git branch -d
+	ri = rebase -i --autosquash
+	fixup = commit --fixup
+	amend = commit --amend --no-edit
+	pushf = push --force-with-lease
