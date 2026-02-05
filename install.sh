@@ -5,3 +5,6 @@ DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 ln -sf "$DOTFILES_DIR/.gitconfig" ~/.gitconfig
 echo "Linked .gitconfig"
+
+ln -sf "$DOTFILES_DIR/.zshrc" ~/.zshrc
+echo "Linked .zshrc"

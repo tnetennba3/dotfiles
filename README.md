@@ -14,3 +14,4 @@ chmod +x install.sh
 ## What's included
 
 - **Git** — global gitconfig with aliases, default branch, editor, and pull strategy
+- **Zsh** — shell config with PATH setup (VS Code, `~/.local/bin`) and nvm
